@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/splide.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/icons/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <div class="container-lg">
+      <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="img/splide1.jpg" class="w-100" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/splide2.jpg" class="w-100" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/splide3.jpg" class="w-100" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/splide4.jpg" class="w-100" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white py-5">
+      <div class="container-lg py-5">
+        <div class="display-1 fw-bold d-lg-block d-none  text-center pb-5">Teachers</div>
+        <div class="h1 text-center pb-5 d-lg-none d-block pb-5">Teachers</div>
+        <div
+          class="splide text-secondary"
+          id="splide2"
+          role="group"
+          aria-label="Splide Basic HTML Example"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img
+                      src="img/teacher1.jpg"
+                      class="w-75 rounded-circle"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div class="text-primary">Leyli Rejepowa</div>
+                    <div class="text-secondary">English language Teacher</div>
+                  </div>
+                </div>
+                <div>Work experience 5+ years</div>
+                <div>Degree Higher education.Philologist</div>
+                <div>Hobbies:Watching films,reading</div>
+              </li>
+              <li class="splide__slide">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img
+                      src="img/teacher3.jpg"
+                      class="w-75 rounded-circle"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div class="text-primary">Amanmyrat Atayev </div>
+                    <div>English language Teacher</div>
+                  </div>
+                </div>
+                <div>Work experience 15+ years</div>
+                <div>Degree Master's degree</div>
+                <div>Hobbies:reading,films football</div>
+              </li>
+              <li class="splide__slide">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <img
+                      src="img/teacher2.jpg"
+                      class="w-75 rounded-circle"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div class="text-primary">Rovshan Myratgulyyew</div>
+                    <div>English language Teacher</div>
+                  </div>
+                </div>
+                <div>Work experience 10+ years</div>
+                <div>Degree: Linguist in English language</div>
+                <div>Hobbies:reading books, playing the guitar</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container-lg py-5">
+      <div class="row text-center ">
+        <div class="col-3">
+          <i class="bi-geo-alt-fill text-primary display-3"></i>
+          <div class="py-1 h4 fw-bold">Ashgabat city</div>
+          <div class="text-secondary">Magtymguly avenue 73, <br> "Turkmenistan" Shopping center  </div>
+          <div><i class="bi-telephone text-secondary"></i>+993 (12)94 28 00</div>
+        </div>
+        <div class="col-3">
+          <i class="bi-geo-alt text-primary display-3"></i>
+          <div class=" h4 fw-bold">Ashgabat city</div>
+          <div class="text-center text-secondary h5">Branch</div>
+          <div class="text-secondary">Parahat 1 residential complex, <br> 1953 (Yashlar) street,144   </div>
+         <div><i class="bi-telephone text-secondary"></i>+993 (12)45 45 46</div>
+        </div>
+        <div class="col-3">
+          <i class="bi-geo-alt text-primary display-3"></i>
+          <div class=" h4 fw-bold">Ashgabat city</div>
+          <div class="text-center text-secondary h5">Branch</div>
+          <div class="text-secondary">8 microdistrict, Turgenler street <br> 10    </div>
+         <div><i class="bi-telephone text-secondary"></i>+993 (12)28 24 28</div>
+        </div>
+         <div class="col-3">
+          <i class="bi-geo-alt text-primary display-3"></i>
+          <div class=" h4 fw-bold">Anew city</div>
+          <div class="text-center text-secondary h5">Branch</div>
+          <div class="text-secondary">Azatlyk  street, 15    </div>
+         <div><i class="bi-telephone text-secondary"></i>+993 (65)64 88 55</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-lg py-5">
+      <div class="text-center h3">
+        Videos
+      </div>
+      <div class="row">
+        <div class="col-4">
+          
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide", {
+          type: "loop",
+          autoplay: true,
+          interval: 2e3,
+          perPage: 1,
+          perMove: 1,
+          gap: "1rem",
+          pagination: 0,
+          breakpoints: {
+            767: {
+              perPage: 1,
+              perMove: 1,
+            },
+          },
+        });
+        splide.mount();
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide("#splide2", {
+          type: "loop",
+          autoplay: true,
+          interval: 2e3,
+          perPage: 3,
+          perMove: 1,
+          gap: "1rem",
+          pagination: 0,
+          arrows: 0,
+          breakpoints: {
+            767: {
+              perPage: 1,
+              perMove: 1,
+            },
+          },
+        });
+        splide.mount();
+      });
+    </script>
+  </body>
+</html>
